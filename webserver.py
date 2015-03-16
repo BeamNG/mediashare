@@ -41,7 +41,7 @@ def main():
 
     app = Application(opts.type)
     
-    http_server = tornado.httpserver.HTTPServer(app, max_buffer_size=MAX_UPLOAD_SIZE)
+    http_server = tornado.httpserver.HTTPServer(app, max_buffer_size=MAX_UPLOAD_SIZE, xheaders=True)
     if opts.threads == 1:
         http_server.listen(opts.port, address=opts.bind)
     else:
