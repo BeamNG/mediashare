@@ -31,15 +31,15 @@ Simple, small and efficient media serving solution
 
 #### Add the user that runs tornado (or use an existing user)
 
-~~~
+```bash
 sudo useradd -m tornado
 # no password for this account, interactive logins disabled:
 sudo passwd -d tornado
-~~~
+```
 
 #### Install tornado webservers and dependencies
 
-~~~
+```bash
 sudo apt-get install git-core sqlite3 python3-pil libav-tools
 sudo su tornado
 cd
@@ -59,7 +59,7 @@ nano config.py
 # test if its working
 # run a test
 python3.4 webserver.py --port=9092 --type=media_ro --threads=1 --logging=info
-~~~
+```
 
 you should see "server media_ro running on port 127.0.0.1:9092 ..."
 
@@ -67,27 +67,27 @@ you should see "server media_ro running on port 127.0.0.1:9092 ..."
 
 Upstart does not like links, so you got to copy the config files there. As your normal user (not tornado!) run:
 
-~~~
+```bash
 sudo cp /home/tornado/media/misc/upstart/tornado-media_ro.conf /etc/init/
 sudo cp /home/tornado/media/misc/upstart/tornado-media_rw.conf /etc/init/
-~~~
+```
 
 Then start the services up:
 
-~~~
+```bash
 sudo start tornado-media_ro
 sudo start tornado-media_rw
-~~~
+```
 
 You can tail their logs to see if  they are up and running:
 
-~~~
+```bash
 tail -f /home/tornado/media/media_r*.log
-~~~
+```
 
 #### Install nginx and the site
 
-~~~
+```bash
 sudo apt-get install nginx
 sudo ln -s /home/tornado/media/misc/nginx/media.beamng.com /etc/nginx/sites-enabled/
 # change the config:
@@ -95,7 +95,7 @@ sudo ln -s /home/tornado/media/misc/nginx/media.beamng.com /etc/nginx/sites-enab
 nano /home/tornado/media/misc/nginx/media.beamng.com
 # then restart nginx
 /etc/init.d/nginx restart
-~~~
+```
 
 
 ## Customization
