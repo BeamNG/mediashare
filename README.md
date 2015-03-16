@@ -11,6 +11,7 @@ Simple, small and efficient media serving solution
  * simple file management backend after upload: http://media.beamng.com/8yOFsKia3y7SQbz8
 
 ### Simple URL features:
+Some examples:
 
  * direct link to the raw file: http://media.beamng.com/exTFTN1FHjkWM2Yu
  * direct link to the raw file with additional arg to show the filename at the end (useful for some downloadtools, etc): http://media.beamng.com/exTFTN1FHjkWM2Yu/myfilename.mp4
