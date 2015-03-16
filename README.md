@@ -1,21 +1,21 @@
 Simple, small and efficient media serving solution
 
-# Demo
+## Demo
  * http://media.beamng.com
 
-# Features
+## Features
  * Automatic Gallery mode if multiple files are uploaded. Example: http://media.beamng.com/IuhbLdmRnB4uPWRxjk5URm2JnkBPdnZc
  * automatic thumbnail generation for uploaded images and videos
  * very simple token authentication: no registration or user accounts
  * Fullscreen video player: http://media.beamng.com/v/exTFTN1FHjkWM2Yu
 
-# Architecture
+## Architecture
 
 - Nginx front webserver redirecting to N read only tornado webservers
 - N tornado read only webservers which handle the file transfers via Nginx's 'send-file'
 - One write only tornad webserver which handles the uploads and data changes
 
-## Software stack
+### Software stack
 
  * [lightGallery](http://sachinchoolur.github.io/lightGallery) - tiny addon and modification for it that allows the hashtag to be used to store the current progress and link to it correctly
  * [VideoJS HTML5 video player](http://www.videojs.com/)
@@ -25,11 +25,11 @@ Simple, small and efficient media serving solution
  * [nginx webserver](http://nginx.org/)
  * [libav](https://libav.org/) - used for the creation of the video thumbnails
 
-# Installation
+## Installation
 
-## Ubuntu 10.04 LTS
+### Ubuntu 10.04 LTS
 
-### Add the user that runs tornado (or use an existing user)
+#### Add the user that runs tornado (or use an existing user)
 
 ~~~
 sudo useradd -m tornado
@@ -37,7 +37,7 @@ sudo useradd -m tornado
 sudo passwd -d tornado
 ~~~
 
-### Install tornado webservers and dependencies
+#### Install tornado webservers and dependencies
 
 ~~~
 sudo apt-get install git-core sqlite3 python3-pil libav-tools
@@ -63,7 +63,7 @@ python3.4 webserver.py --port=9092 --type=media_ro --threads=1 --logging=info
 
 you should see "server media_ro running on port 127.0.0.1:9092 ..."
 
-### Add upstart script for the tornado webservers
+#### Add upstart script for the tornado webservers
 
 Upstart does not like links, so you got to copy the config files there. As your normal user (not tornado!) run:
 
@@ -85,7 +85,7 @@ You can tail their logs to see if  they are up and running:
 tail -f /home/tornado/media/media_r*.log
 ~~~
 
-### Install nginx and the site
+#### Install nginx and the site
 
 ~~~
 sudo apt-get install nginx
@@ -98,7 +98,7 @@ nano /home/tornado/media/misc/nginx/media.beamng.com
 ~~~
 
 
-# Customization
+## Customization
 
 You might want to change the following locations to give your page a more custom look and feel:
 
