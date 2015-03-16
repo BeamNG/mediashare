@@ -42,7 +42,8 @@ class RestUploadMediaFileHandler(BaseHandler):
         logging.info("fileExtension: %s", fileExtension)
 
         # find out the image sizes
-        if fileExtension.lower() in IMAGE_EXTS:
+        if THUMBNAIL_GENERATION and fileExtension.lower() in IMAGE_EXTS:
+            from PIL import Image
             imagewidth = -1
             imageheight = -1
             img = Image.open(filenameAbs)

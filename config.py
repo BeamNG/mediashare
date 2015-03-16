@@ -46,7 +46,7 @@ DROPZONE_ACCEPTED_FILES = 'image/png,.png,image/jpeg,.jpg,image/jpeg,.jpeg,video
 DROPZONE_MESSAGE = 'Click or drop any of the following files here to upload: PNG, JPG, MP4, WEBM (Max size: %0.0f MB)' % (MAX_UPLOAD_SIZE/(1<<20))
 
 # the command line for the ffmpeg / fprobe utilities used for taking video thumbnails
-AVCONF_CMDLINE = '/usr/bin/avconv -y -i %(inputFilename)s -ss %(seekTime)s -vframes 1 -f mjpeg %(scaleArg)s %(outputFilename)s'
+AVCONV_CMDLINE = '/usr/bin/avconv -y -i %(inputFilename)s -ss %(seekTime)s -vframes 1 -f mjpeg %(scaleArg)s %(outputFilename)s'
 AVROBE_CMDLINE = '/usr/bin/avprobe -show_format -show_streams -of json %(inputFilename)s'
 
 # set this to a secure random value of your own. This application should not use cookies though

@@ -19,7 +19,6 @@ class MainHandler(BaseHandler):
 class TagViewHandler(BaseHandler):
     def get(self, tag):
         isAdmin = False
-        logging.info(tag)   
         if tag == ADMIN_SECRET:
             # list all files ordered by upload date
             isAdmin = True
