@@ -103,7 +103,7 @@ nano /home/tornado/media/misc/nginx/media.beamng.com
 You might want to change the following locations to give your page a more custom look and feel:
 
  * templates/media/main.tpl - the start website
- * static/400.html / static/500.html - the nginx error websites. You have to uncomment/change the links inthere
+ * static/400.html / static/500.html - the nginx error websites. You have to uncomment/change the links in there
 
 
 ## License
