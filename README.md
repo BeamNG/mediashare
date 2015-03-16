@@ -20,7 +20,7 @@ Some examples:
  * 300px thumbnail: http://media.beamng.com/exTFTN1FHjkWM2Yu?thumb=300
  * 100px thumbnail: http://media.beamng.com/exTFTN1FHjkWM2Yu?thumb=100
  * thumbnail that fits in 200x300 pixels: http://media.beamng.com/exTFTN1FHjkWM2Yu?thumb=200x300
- * thumbnail at 3 seconds into the video: http://media.beamng.com/exTFTN1FHjkWM2Yu?thumb=300?time=3
+ * thumbnail at 3 seconds into the video: http://media.beamng.com/exTFTN1FHjkWM2Yu?thumb=1&time=3
 
 ## Architecture
 
