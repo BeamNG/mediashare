@@ -1,14 +1,13 @@
-# mediashare
-Media sharing webservice
-
+Simple, small and efficient media serving solution
 
 # Demo
  * http://media.beamng.com
 
 # Features
- * Automatic Gallery mode if multiple files are uploaded: http://media.beamng.com/IuhbLdmRnB4uPWRxjk5URm2JnkBPdnZc
+ * Automatic Gallery mode if multiple files are uploaded. Example: http://media.beamng.com/IuhbLdmRnB4uPWRxjk5URm2JnkBPdnZc
+ * automatic thumbnail generation for uploaded images and videos
  * very simple token authentication: no registration or user accounts
- * 
+ * Fullscreen video player: http://media.beamng.com/v/exTFTN1FHjkWM2Yu
 
 # Architecture
 
@@ -17,6 +16,7 @@ Media sharing webservice
 - One write only tornad webserver which handles the uploads and data changes
 
 ## Software stack
+
  * [lightGallery](http://sachinchoolur.github.io/lightGallery) - tiny addon and modification for it that allows the hashtag to be used to store the current progress and link to it correctly
  * [VideoJS HTML5 video player](http://www.videojs.com/)
  * [DropZone uploader](http://www.dropzonejs.com/)
@@ -103,3 +103,4 @@ nano /home/tornado/media/misc/nginx/media.beamng.com
 You might want to change the following locations to give your page a more custom look and feel:
 
  * templates/media/main.tpl - the start website
+ * static/400.html / static/500.html - the nginx error websites. You have to uncomment/change the links inthere
