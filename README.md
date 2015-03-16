@@ -5,10 +5,10 @@ Simple, small and efficient media serving solution
 
 ## Features
  * Automatic Gallery mode if multiple files are uploaded. [Example](http://media.beamng.com/IuhbLdmRnB4uPWRxjk5URm2JnkBPdnZc)
- * automatic thumbnail generation for uploaded images and videos
- * very simple token authentication: no registration or user accounts
+ * Automatic thumbnail generation for uploaded images and videos
+ * Very simple token authentication: no registration or user accounts
  * Fullscreen video player. [Example](http://media.beamng.com/v/exTFTN1FHjkWM2Yu)
- * simple file management backend after upload. [Example screenshot](http://media.beamng.com/8yOFsKia3y7SQbz8)
+ * Simple file management backend after upload. [Example screenshot](http://media.beamng.com/8yOFsKia3y7SQbz8)
 
 ### Simple URL features:
 Some examples:
