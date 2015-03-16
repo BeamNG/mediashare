@@ -47,7 +47,7 @@ DROPZONE_MESSAGE = 'Click or drop any of the following files here to upload: PNG
 
 # the command line for the ffmpeg / fprobe utilities used for taking video thumbnails
 AVCONV_CMDLINE = '/usr/bin/avconv -y -i %(inputFilename)s -ss %(seekTime)s -vframes 1 -f mjpeg %(scaleArg)s %(outputFilename)s'
-AVROBE_CMDLINE = '/usr/bin/avprobe -show_format -show_streams -of json %(inputFilename)s'
+AVPROBE_CMDLINE = '/usr/bin/avprobe -show_format -show_streams -of json %(inputFilename)s'
 
 # set this to a secure random value of your own. This application should not use cookies though
 COOKIE_SECRET = 'C%Zl#Aqu6:pMpeXG2zfs#B,e-b08NFOb5Qi6Fx=^cW;P#4+VoOl?tGen35Q4bHpppbD!b!k3l@%u0Lg,@h3gkcW0y7FFT,83+.E$IQs?XJo#+ZH13eTX0Q)A60(fV2c)IauoBh%Mb:HJ.$%YBaw8A=8)ylJy1Yff4oBAQpYhFYnv9*qaL%48fmH!YV8$B-cn0HxNv-3L'
