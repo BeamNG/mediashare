@@ -3,7 +3,11 @@ server {
     listen [::]:80;
 
     root /home/tornado/media/;
-    server_name media.beamng.com;
+    
+    # CHANGE ME (at least) #######
+    server_name media.website.com;
+    ##############################
+    
     client_max_body_size 512M;
 
     error_page 500 502 503 504 /static/500.html;

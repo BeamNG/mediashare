@@ -1,15 +1,15 @@
 import os
 
 # The project title, used in the header and the foote
-PROJECT_NAME = 'BeamNG.media'
+PROJECT_NAME = 'My.media'
 
 # the root URL of this, use // instead of http/https to provide support for both transparently if you like
-WEBSITE_URL     = '//media.beamng.com'
+WEBSITE_URL     = '//media.website.com'
 
 # the link to the imprint on some pages, leave empty to remove
-WEBSITE_IMPRINT  = '//beamng.com/imprint'
+WEBSITE_IMPRINT  = '//website.com/imprint'
 # the link to the contact us form on some pages, leave empty to remove
-WEBSITE_CONTACT  = '//beamng.com/contactus/?subject=media.beamng.com'
+WEBSITE_CONTACT  = '//website.com/contactus'
 
 # Debug mode: This enables app wide debug mode (more log messages, one thread only, automatic reloading when you change the files)
 # DO NOT USE IN PRODUCTION
