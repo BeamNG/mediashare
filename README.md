@@ -26,7 +26,7 @@ Some examples:
 
 - Nginx front webserver redirecting to N read only tornado webservers
 - N tornado read only webservers which handle the file transfers via Nginx's 'send-file'
-- One write only tornad webserver which handles the uploads and data changes
+- One write only tornado webserver which handles the uploads and data changes
 
 ### Software stack
 
