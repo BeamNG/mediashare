@@ -100,10 +100,14 @@ tail -f /home/tornado/media/media_r*.log
 
 ```bash
 sudo apt-get install nginx
-sudo ln -s /home/tornado/media/misc/nginx/media.beamng.com /etc/nginx/sites-enabled/
+
+# replace with your website name:
+sudo cp /home/tornado/media/misc/nginx/media.website.com /etc/nginx/sites-enabled/my.website.com
+
 # change the config:
 # change at least the server_name
-nano /home/tornado/media/misc/nginx/media.beamng.com
+sudo nano /etc/nginx/sites-enabled/my.website.com
+
 # then restart nginx
 /etc/init.d/nginx restart
 ```
