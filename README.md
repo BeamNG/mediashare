@@ -70,11 +70,9 @@ sqlite3 media.db < misc/schema-media.sql
 nano config.py
 
 # test if its working
-# run a test
 python3.4 webserver.py --port=9092 --type=media_ro --threads=1 --logging=info
+# you should see "server media_ro running on port 127.0.0.1:9092 ..."
 ```
-
-you should see "server media_ro running on port 127.0.0.1:9092 ..."
 
 #### Add upstart script for the tornado webservers
 
