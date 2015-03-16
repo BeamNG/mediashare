@@ -13,14 +13,14 @@ Simple, small and efficient media serving solution
 ### Simple URL features:
 Some examples:
 
- * direct link to the raw file: http://media.beamng.com/exTFTN1FHjkWM2Yu
- * direct link to the raw file with additional arg to show the filename at the end (useful for some downloadtools, etc): http://media.beamng.com/exTFTN1FHjkWM2Yu/myfilename.mp4
- * using the video player using v/ : http://media.beamng.com/v/exTFTN1FHjkWM2Yu
- * 1: full resolution thumbnail (only useful for videos): http://media.beamng.com/exTFTN1FHjkWM2Yu?thumb=1
- * 300px thumbnail: http://media.beamng.com/exTFTN1FHjkWM2Yu?thumb=300
- * 100px thumbnail: http://media.beamng.com/exTFTN1FHjkWM2Yu?thumb=100
- * thumbnail that fits in 200x300 pixels: http://media.beamng.com/exTFTN1FHjkWM2Yu?thumb=200x300
- * thumbnail at 3 seconds into the video: http://media.beamng.com/exTFTN1FHjkWM2Yu?thumb=1&time=3
+ * direct link to the raw file using its tag: [/exTFTN1FHjkWM2Yu](http://media.beamng.com/exTFTN1FHjkWM2Yu)
+ * direct link to the raw file with additional arg to show the filename at the end (useful for some downloadtools, etc): [/exTFTN1FHjkWM2Yu/myfilename.mp4](http://media.beamng.com/exTFTN1FHjkWM2Yu/myfilename.mp4)
+ * using the video player using v/ : [/v/exTFTN1FHjkWM2Yu](http://media.beamng.com/v/exTFTN1FHjkWM2Yu)
+ * 1: full resolution thumbnail (only useful for videos): [/exTFTN1FHjkWM2Yu?thumb=1](http://media.beamng.com/exTFTN1FHjkWM2Yu?thumb=1)
+ * 400px thumbnail: [/exTFTN1FHjkWM2Yu?thumb=400](http://media.beamng.com/exTFTN1FHjkWM2Yu?thumb400)
+ * 150px thumbnail: [/exTFTN1FHjkWM2Yu?thumb=15](http://media.beamng.com/exTFTN1FHjkWM2Yu?thumb=150)
+ * thumbnail that fits in 200x300 pixels: [/exTFTN1FHjkWM2Yu?thumb=200x300](http://media.beamng.com/exTFTN1FHjkWM2Yu?thumb=200x300)
+ * thumbnail at 3 seconds into the video: [/exTFTN1FHjkWM2Yu?thumb=1&time=3](http://media.beamng.com/exTFTN1FHjkWM2Yu?thumb=1&time=3)
 
 ## Architecture
 
