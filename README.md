@@ -118,7 +118,7 @@ sudo nano /etc/nginx/sites-enabled/my.website.com
 You might want to change the following locations to give your page a more custom look and feel:
 
  * templates/media/main.tpl - the start website
- * static/400.html / static/500.html - the nginx error websites. You should to change the links in there.
+ * static/400.html / static/500.html - the nginx error websites. You should change the links in there.
 
 
 ## License
