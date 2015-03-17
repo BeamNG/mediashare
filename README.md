@@ -56,7 +56,7 @@ sudo passwd -d tornado
 sudo apt-get install git-core sqlite3 python3-pil libav-tools
 sudo su tornado
 cd
-git clone hasdasd media
+git clone https://github.com/BeamNG/mediashare.git media
 cd media
 wget https://pypi.python.org/packages/source/t/tornado/tornado-4.1.tar.gz
 tar xvfz tornado-*.tar.gz
